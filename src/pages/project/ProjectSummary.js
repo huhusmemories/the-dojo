@@ -33,9 +33,7 @@ export default function ProjectSummary({ project }) {
           ))}
         </div>
       </div>
-      {user.uid === project.createdBy.id && (
-        <button className="btn" onClick={handleClick}>Mark as complete</button>
-      )}
+      <button className="btn" onClick={handleClick}>Mark as complete</button>
     </div>
   )
 }
